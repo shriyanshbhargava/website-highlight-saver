@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Highlight Saver - Demo Page</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: #f8fafc;
+      }
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #1e293b;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      h2 {
+        color: #334155;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      p {
+        color: #475569;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+      }
+      .highlight-demo {
+        background: #fef3c7;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #f59e0b;
+        margin: 20px 0;
+      }
+      .highlight-demo h3 {
+        color: #92400e;
+        margin-top: 0;
+      }
+      .highlight-demo p {
+        color: #78350f;
+        margin-bottom: 0;
+      }
+      .instructions {
+        background: #dbeafe;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #3b82f6;
+        margin: 20px 0;
+      }
+      .instructions h3 {
+        color: #1e40af;
+        margin-top: 0;
+      }
+      .instructions ol {
+        color: #1e40af;
+        margin-bottom: 0;
+      }
+      .instructions li {
+        margin-bottom: 8px;
+      }
+      .sample-text {
+        background: #f1f5f9;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        margin: 20px 0;
+      }
+      .sample-text p {
+        color: #475569;
+        margin-bottom: 15px;
+      }
+      .sample-text p:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>✨ Text Highlight Saver Demo</h1>
+
+      <div class="highlight-demo">
+        <h3>🎯 Try It Out!</h3>
+        <p>
+          Select any text on this page to see the highlight saver in action. The
+          extension will detect your selection and show a popup asking if you
+          want to save the highlight.
+        </p>
+      </div>
+
+      <div class="instructions">
+        <h3>📋 How to Use</h3>
+        <ol>
+          <li>
+            <strong>Select Text:</strong> Highlight any text on this page with
+            your mouse
+          </li>
+          <li>
+            <strong>Save Popup:</strong> A modern popup will appear asking "Save
+            Highlight?"
+          </li>
+          <li>
+            <strong>Click Save:</strong> Click the save button to store your
+            highlight
+          </li>
+          <li>
+            <strong>Manage Highlights:</strong> Click the extension icon in your
+            toolbar to view all saved highlights
+          </li>
+        </ol>
+      </div>
+
+      <h2>Sample Content for Highlighting</h2>
+
+      <div class="sample-text">
+        <p>
+          This is a sample paragraph that you can highlight to test the
+          extension. Try selecting different portions of text to see how the
+          highlight saver works. You can select single words, phrases, or entire
+          paragraphs.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <p>
+          The extension will save your highlights locally in your browser, so
+          you can access them later by clicking the extension icon. Each
+          highlight includes the text you selected, the page title, URL, and
+          timestamp.
+        </p>
+      </div>
+
+      <h2>Features</h2>
+
+      <div class="sample-text">
+        <p>
+          <strong>Smart Detection:</strong> The extension automatically detects
+          when you select text and positions the save popup intelligently near
+          your selection.
+        </p>
+
+        <p>
+          <strong>Local Storage:</strong> All your highlights are stored locally
+          in your browser for complete privacy. No data is sent to external
+          servers.
+        </p>
+
+        <p>
+          <strong>Easy Management:</strong> View, search, copy, and delete your
+          highlights through the extension popup. You can also navigate back to
+          the original pages where you made the highlights.
+        </p>
+
+        <p>
+          <strong>Modern UI:</strong> Beautiful, responsive design with smooth
+          animations and intuitive controls that make managing your highlights a
+          pleasure.
+        </p>
+      </div>
+
+      <h2>Technical Details</h2>
+
+      <div class="sample-text">
+        <p>
+          This extension is built with modern web technologies including React,
+          TypeScript, and Tailwind CSS. It uses the Chrome Extension Storage API
+          to persist your highlights locally and provides a seamless user
+          experience across all websites.
+        </p>
+
+        <p>
+          The content script runs on all web pages and detects text selections
+          in real-time. When you select text, it creates a floating popup that
+          allows you to save the highlight with a single click.
+        </p>
+      </div>
+
+      <div class="highlight-demo">
+        <h3>🚀 Ready to Start?</h3>
+        <p>
+          Go ahead and select some text from this page! Try highlighting
+          different types of content - short phrases, long paragraphs, or even
+          multiple sentences. The extension will handle it all gracefully.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

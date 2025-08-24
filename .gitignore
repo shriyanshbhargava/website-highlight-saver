@@ -1,0 +1,9 @@
+node_modules
+build
+.plasmo
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
